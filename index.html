@@ -37,7 +37,7 @@
         .login {
             z-index: 5;
             width: 50%;
-            min-width: 650px;
+            min-width: 320px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -47,7 +47,7 @@
             box-shadow: 0px 0px 10px black;
             border-radius: 20px;
             transform: all ease 0.5s;
-            height: 650px;
+            height: 480px;
         }
 
         /*.login:hover{
@@ -179,6 +179,8 @@
         .contacts img {
             width: 45px;
             cursor: pointer;
+            position: relative;
+            top: 30px;
         }
 
         @media (max-width:500px)  {
@@ -187,13 +189,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 110%;
+                width: 100%;
             }
 
             .logo img {
                 position: relative;
                 right: 5px;
             }
+
+
         }
     </style>
 </head>
