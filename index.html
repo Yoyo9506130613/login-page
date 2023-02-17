@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>LOGIN PAGE</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg,#FF6742,#D43D94,#3D99D7);
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blureEffect {
+            position: relative;
+            left: 0;
+            width: 50%;
+            min-width: 650px;
+            background: linear-gradient(90deg, white,white,white);
+            transform: all ease 0.3s;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .login {
+            z-index: 5;
+            width: 50%;
+            min-width: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 20px;
+            transform: all ease 0.5s;
+            height: 650px;
+        }
+
+        /*.login:hover{
+        
+        }*/
+
+        .login:hover ~ .blureEffect{
+            left: 25%;
+        }
+
+        .logo {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(#5E65EE,#D53DD5,#ff6743);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .logo img {
+            width: 25%;
+        }
+
+        .loginInputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 75%;
+            height: 300px;
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+            position: relative;
+            top: -50px;
+            border-radius: 20px;
+        }
+
+        .title span {
+            font-size: 18px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputs {
+            width: 100%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input input {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            font-size: 15px;
+            width: 70%;
+            padding: 5px;
+            transform: all ease 0.3s;
+        }
+
+        .input input:hover {
+            width: 85%;
+        }
+
+        .inputTitle {
+            margin-left:15px ;
+            margin-top: 20px;
+        }
+
+        .inputTitle span {
+            background: -webkit-linear-gradient(#fe0094,#1d27f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .acceptBtn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .acceptBtn button {
+            width: 50%;
+            background: linear-gradient(90deg,#d43d94,#5e65ee);
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            transform: all ease 0.3s;
+            position: relative;
+            top: 50px;
+        }
+
+        .acceptBtn button:hover {
+            background: linear-gradient(-90deg,#d43d94,#5e65ee);
+            width: 75%;
+        }
+
+        .forgotPassword a {
+            text-decoration: none;
+            font-size: 13px;
+            position: relative;
+            top: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .contacts img {
+            width: 45px;
+            cursor: pointer;
+        }
+
+        @media (max-width:500px)  {
+            
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 110%;
+            }
+
+            .logo img {
+                position: relative;
+                right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="logo">
+                <img src="transformer.png" alt="transformer">
+            </div>
+
+            <div class="loginInput">
+                <div class="title" >
+                    <span>LOGIN</span>
+                </div>
+
+                <div class="inputs">
+                    <div class="inputTitle">
+                        <span>ENAIL</span>
+                    </div>
+
+                    <div class="input">
+                        <input type="text">
+                    </div>
+
+                    <div class="inputTitle">
+                        <span>PASSWORD</span>
+                    </div>
+
+                    <div class="input">
+                        <input type="password">
+                    </div>                    
+                </div>
+
+                <div class="acceptBtn">
+                    <button>LOGIN</button>
+                </div>
+
+                <div class="forgotPassword">
+                    <a href="">Forgot Password</a>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <img src="facebook.png" alt="facebook">
+                <img src="google.png" alt="google">
+                <img src="instagram.png" alt="instagram">
+            </div>
+
+            <div class="blureEffect">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
